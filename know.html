@@ -1,0 +1,282 @@
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href="style1.css" /> -->
+        <style>
+body{
+	background-color: rgb(150, 150, 150);
+	margin: 0;
+}
+
+
+/* #four{
+	background-color: grey;
+	height: 20%;
+} */
+
+#he{
+	display:flex;
+	flex-direction: row;
+}
+
+.new{
+	padding-left: 100px;
+	font-size: 500%;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	font-style: italic;
+	color: ivory;
+}
+
+.line{
+	position: absolute;
+	left: 2%;
+    width: 12%;
+    height: 0px;
+    top: 15%;
+    border-top: 10px solid #01E1FF;
+	border-radius: 5px;
+    transform: rotate(-0.14deg);
+}
+
+
+.about{
+
+	position: relative;
+	right: -66.5%;
+	padding-top: 1%;
+}
+
+.circle_img1{
+	position: relative;
+	width: 1000px;
+	height: 1000px;
+	left: 5%;
+	top: 123px;
+
+	background: url('static/1.jpeg');
+	border-radius: 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.circle_img1 img{
+	width: 100%;
+	height: auto;
+}
+
+.circle_img2{
+	position: relative;
+	width: 1000px;
+	height: 1000px;
+	right: -75%;
+	top: 25%;
+	
+	background: url('static/2.2.jpeg');
+	border-radius: 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.circle_img2 img{
+	width: 100%;
+	height: auto;
+}
+
+.circle_img3{
+	position: relative;
+	width: 1000px;
+	height: 1000px;
+	left: 5%;
+	top: 20%;
+
+	background: url('static/3.1.JPG');
+	border-radius: 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.circle_img3 img{
+	width: 100%;
+	height: auto;
+}
+
+
+.circle_img4{
+	position: relative;
+	width: 1000px;
+	height: 1000px;
+	right: -75%;
+	top: 25%;
+
+	background: url('static/4.jpeg');
+	border-radius: 500px;
+
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.circle_img4 img{
+	width: 100%;
+	height: auto;
+}
+
+.t1{
+	width: 2000px;
+	height: 160px;
+	right: 5%;
+	top: 10%;
+	padding-top: 4%;
+	padding-bottom: 10%;
+	padding-left: 7%;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100px;
+	line-height: 100px;
+
+	color: #000000;
+}
+
+#one{
+	display: flex;
+	flex-direction: row;
+}
+
+.t2{
+	width: 2000px;
+	height: 154px;
+	right: 5%;
+	top: 10%;
+	padding-top: 1.5%;
+	padding-bottom: 5%;
+	padding-left: 15%;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100px;
+	line-height: 100px;
+
+	color: white;
+}
+
+#two{
+	display: flex;
+	flex-direction: row;
+}
+
+.t3{
+	width: 2000px;
+	height: 154px;
+	right: 5%;
+	top: 10%;
+	padding-top: 1%;
+	padding-bottom: 5%;
+	padding-left: 7%;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100px;
+	line-height: 100px;
+
+	color: black;
+}
+
+#three{
+	display: flex;
+	flex-direction: row;
+}
+
+.t4{
+	width: 2000px;
+	height: 154px;
+	right: 5%;
+	top: 10%;
+	padding-top: 3%;
+	padding-bottom: 5%;
+	padding-left: 15%;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100px;
+	line-height: 100px;
+
+	color: white;
+}
+
+#four{
+	display: flex;
+	flex-direction: row;
+}
+        </style>
+        <title>BRIGID - Know us better</title>
+</head>
+
+<body>
+    <div id="he">
+        <div class="new">
+            <h1>ABOUT US</h1>
+        </div>
+
+        <div class="line">
+            
+        </div>
+
+        <div class="about">
+            <img src="{{url_for('static',filename = 'logo.JPG')}}" style="width: 700px;"">
+        </div>
+    </div>
+
+    <div id="one">
+        <div class="circle_img1">
+
+        </div>
+
+        <div class="t1">
+            <p><b>Rahul H Raj</b><br>Enthusiastic learner in mainly interested in the domain<br>of Machine Learning and related fields.<br>Get in touch with me at <a href="https://www.linkedin.com/in/rahul-h-raj-0aba271ba/">https://www.linkedin.com/in/rahul-h-raj-0aba271ba/</a><p>
+        </div>
+    </div>
+
+    <div id="two">
+        <div class="circle_img2">
+            
+        </div>
+
+        <div class="t2">
+            <p><b>Soumye Joshi</b><br>I am passionate about Web Development, Machine<br>Learning and many more related fields and actively<br>explore more and more options<br>Get in touch with me at <a href="linkedin.com/in/soumye-joshi-aa80a51b7">linkedin.com/in/soumye-joshi-aa80a51b7</a></p>
+        </div>
+    </div>
+
+    <div id="three">
+        <div class="circle_img3">
+           
+        </div>
+
+        <div class="t3">
+            <p><b>Shreya S Adiga</b><br>Hardworking person and passionate about Web Tech<br>and Designing aquainted with backend dev and also enthusiastic about Android Dev.<br>Reach out to me at <a href="https://www.linkedin.com/in/shreya-s-adiga-343250217">https://www.linkedin.com/in/shreya-s-adiga-343250217</a></p>
+        </div>
+    </div>
+
+    <div id="four">
+        <div class="circle_img4">
+
+        </div>
+
+        <div class="t4">
+            <p><b>Nisha Murthy D</b><br>I have a desire for Machine Learning and AI and<br>am always open to exploring new and interesting options<br>Reach out to me at <a href="https://www.linkedin.com/in/nishamurthy">https://www.linkedin.com/in/nishamurthy</a></p>
+        </div>
+    </div>
+
+</body>
+{% endblock %}
